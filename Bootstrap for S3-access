@@ -7,3 +7,4 @@ python3 get-pip.py
 pip install awscli
 aws s3 cp s3://rick-buck /var/www/html/ --recursive
 service apache2 start
+
