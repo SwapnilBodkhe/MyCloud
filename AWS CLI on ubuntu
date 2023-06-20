@@ -49,3 +49,4 @@ Delete credentials
 $ rm -rf credentials
 
 Terminate the instance
+
