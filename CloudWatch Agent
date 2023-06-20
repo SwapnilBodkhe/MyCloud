@@ -37,3 +37,4 @@ $ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch
 ## Generate stress on system
 $ sudo apt install stress
 $ stress --cpu 1
+
