@@ -26,3 +26,4 @@
 # aws s3 cp /root/test1Gb.db s3://bucket
 
 * Check your S3 bucket in console
+
