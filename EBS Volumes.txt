@@ -32,4 +32,4 @@ EBS volumes
 
 > Check whether volume is unmounted or not
 # cd /fileserver
-# ls 
+# ls
