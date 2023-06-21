@@ -1,0 +1,41 @@
+# list all user's info
+aws iam list-users
+
+# list all user's usernames
+aws iam list-users --output text | cut -f 6
+
+# list current user's info
+aws iam get-user
+
+# list current user's access keys
+aws iam list-access-keys
+
+# crate new user
+aws iam create-user \
+    --user-name UserName
+
+# create multiple new users, from a file
+allUsers=$(cat ./user-names.txt)
+for userName in $allUsers; do
+    aws iam create-user \
+        --user-name $userName
+done
+
+# list all users
+aws iam list-users --no-paginate
+
+# get a specific user's info
+aws iam get-user \
+    --user-name UserName
+
+# delete one user
+aws iam delete-user \
+    --user-name UserName
+
+# delete all users
+# allUsers=$(aws iam list-users --output text | cut -f 6);
+allUsers=$(cat ./user-names.txt)
+for userName in $allUsers; do
+    aws iam delete-user \
+        --user-name $userName
+done
