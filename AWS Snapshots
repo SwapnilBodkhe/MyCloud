@@ -6,7 +6,7 @@ Snapshots
 
 > Volume
 
-> Select the HDD which wants to take snapshot
+> Select the Volume which wants to take snapshot
 
 > Actions
 
@@ -14,21 +14,25 @@ Snapshots
 
 > Now, Backup is created
 
-***Go To Terminal for Backup & Disaster Recovery***
+
+***Backup & Disaster Recovery from Snapshot***
+
 
 > Connect to the EC2 instance
 
-> Snapshot
+> Go to Snapshot
 
 > Select the Snapshot which wants to take Backup & Disaster Recovery
 
-> Actions
+> Go to Actions
 
 > Select- Create volume from snapshot
 
-> Volume
+> Go to Volume (Check whether volume is Created or not)
 
+> Attach volume to EC2 Instance
 
+***Go To Terminal*** 
 
 
 Check whether volume is attached
@@ -36,11 +40,6 @@ Check whether volume is attached
 
 > Chek if there is any data on volume
 # file -s /dev/xvdf
-
-> Create a file system for volume
-# mkfs -t ext4 /dev/xvdf
-
-# mkdir /fileserver
  
 # mount /dev/xvdf /fileserver
 
@@ -48,16 +47,5 @@ Check whether volume is attached
 
 # ls
 
-# lost+found (This is confimation for it is fresh format disc)
-
-> Remove lost+found 
-# sudo rm -rf
-
-> Create some files using nano
-
-> Unmount the volume 
-# umount /dev/xvdf
-
-> Check whether volume is unmounted or not
-# cd /fileserver
-# ls
+> Check whether data is available or not
+# sudo nano <file name>
