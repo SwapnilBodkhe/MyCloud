@@ -25,6 +25,14 @@ EBS volumes
 
 # cd /fileserver
 
+# ls
+
+# lost+found (This is confimation for it is fresh format disc)
+
+> Remove lost+found 
+
+# rm -rf
+
 > Create some files using nano
 
 > Unmount the volume 
