@@ -30,8 +30,7 @@ EBS volumes
 # lost+found (This is confimation for it is fresh format disc)
 
 > Remove lost+found 
-
-# rm -rf
+# sudo rm -rf
 
 > Create some files using nano
 
