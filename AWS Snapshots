@@ -26,10 +26,16 @@ Snapshots
 
 > Select- Create volume from snapshot
 
+> Volume
 
 
 
 
+Check whether volume is attached
+# lsblk
+
+> Chek if there is any data on volume
+# file -s /dev/xvdf
 
 > Create a file system for volume
 # mkfs -t ext4 /dev/xvdf
